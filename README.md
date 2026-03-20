@@ -2,8 +2,8 @@ The-Prestige-Home-Appliances/
 │── index.html
 │── about.html
 │── contact.html
-│── directors.html
 │── gallery.html
+│── directors.html
 │
 ├── css/
 │   └── style.css
@@ -12,3 +12,7 @@ The-Prestige-Home-Appliances/
 │   └── script.js
 │
 ├── images/
+│   ├── tv/
+│   ├── cookers/
+│   ├── sound-systems/
+│   └── others/
