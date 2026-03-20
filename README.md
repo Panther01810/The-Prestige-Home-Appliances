@@ -12,8 +12,3 @@ The-Prestige-Home-Appliances/
 │   └── script.js
 │
 ├── images/
-│   ├── armco1.jpg
-│   ├── Beko1.jpg
-│   ├── Samsung1.jpg
-│   ├── LG 32Inch Full HD.webp
-│   └── ... (all product images)
