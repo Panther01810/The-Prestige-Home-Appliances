@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Directors - Prestige Home Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Prestige Home Appliances</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="directors.html">Directors</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section class="directors-section">
+    <h1>Our Leadership Team</h1>
+    <hr>
+    <P class="subtitle">Meet the professionals guiding PRESTIGE HOME APPLIANCES</p>
+    <div class="directors-container">
+<!--ceo-->
+         <div class="director-card">
+            <img src="images/ceo.jpg" alt="Ceo">
+            <h3>James Masicka</h3>
+            <h4>Chief Executive Officer - Prestige Home Appliances</h4>
+            <p>Driving Innovations, excellence and trusted leadership at Prestige Home Appliances - Delivering modern Solutions for Smarter Homes.</p>
+        </div>
+<!--managing Director-->
+         <div class="director-card">
+            <img src="images/manager.jpg" alt="managing director">
+            <h3>Richard Omondi</h3>
+            <h4>managing Director - Prestige Home Appliances</h4>
+            <p>I Provides Strategic leadership and Oversees all company operatios, ensuring Prestige Home appliance continues to deliver innovative and reliable home appliance solutios.</p>
+        </div>
+<!--founding director-->
+         <div class="director-card">
+            <img src="images/director.jpg" alt="director and Founder">
+            <h3>Laura Cheptoo</h3>
+            <h4>Director and Founder - Prestige Home Appliances</h4>
+            <p>Welcome All to Prestige Home Appliances. We provide reliable and Quality Home Appliaces designed to make life Easier. Affoardability of quality products, timely delivery and innovaton is our goal.</p>
+        </div>
+<!--push Secretary-->
+         <div class="director-card">
+            <img src="images/push.jpg" alt="Push Secretary">
+            <h3>Nyabaro Faith</h3>
+            <h4>Push secretary -Prestige Home Appliances</h4>
+            <p>As the push secretary at Prestige Home Appliances, I ensure communication flows efficientlyamong the staff and stakeholders, Sending reminders and follow-ups, distributing announcements and promoting companiy's activities is alsopart of my role.</p>
+        </div>
+<!--Supervising Director-->
+         <div class="director-card">
+            <img src="images/supervisor.jpg" alt="Supervising Director">
+            <h3>George Okwara</h3>
+            <h4>Supervising director - Prestige Home Appliances</h4>
+            <p>I oversee daily activities at Prestige Home Appliencies, Ensuring production meets the required Standars, good wokers correlation and that workers rights are preserved.</p>
+        </div>
+<!--Customer Support-->
+         <div class="director-card">
+            <img src="images/Support.jpg" alt="Customer Support director">
+            <h3>Salome Muithi</h3>
+            <h4>Customer Support Director - Prestige Home Appliances</h4>
+            <p>At Prestige Home Appliencies, Customer satisfaction is our main goal. I Ensure customer satisfaction by leading the support team and improving service response and client experience.</p>
+        </div>
+<!--Online Store Manager-->
+         <div class="director-card">
+            <img src="images/Store_manager.jpg" alt="Online Store Director">
+            <h3>Faith Nyambura</h3>
+            <h4>Online Store Director - Prestige Home Appliances</h4>
+            <p>Our team is responsible for updating our online store resources, giving offers and ensuring that quality of products is met.</p>
+        </div>
+<!--Delivery Manager-->
+         <div class="director-card">
+            <img src="images/Delivery.jpg" alt="Delivery Manager">
+            <h3>Musyimi Paul</h3>
+            <h4>Delivery Manager - Prestige Home Appliances</h4>
+            <p>I oversee delivery logistics and ensure products reach customers safely and on time across all service areas. Timely delivery of Quality Prestige Home Appliencies is our focus.</p>
+        </div>
+<!--Sales and Order secretary(marketing director)-->
+         <div class="director-card">
+            <img src="images/marketing.jpg" alt="Marketing Director">
+            <h3>Ian Nyakundi</h3>
+            <h4>Marketing Director - Prestige Home Appliances</h4>
+            <p>As the the sales and Order Secretary, i lead marketing Campaigns, brand strategy, and customer engagement initiatives for Prestige Home Appliances.</p>
+        </div>
+<!--Finace Director-->
+ <div class="director-card">
+            <img src="images/Finance.jpg" alt="Finance Director">
+            <h3>Nkurruna Victor</h3>
+            <h4>Finance Director - Prestige Home Appliances</h4>
+            <p>I lead a team that is responsible for managing the company finances, budgeting, and yearly financial planning to ensure sustainable Growth and Operational Efficiency.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-button" onclick="toggleChatbot()">
+    💬 Chat with us
+</div>
+
+<!-- CHATBOT WINDOW -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+        Prestige Support
+        <span onclick="toggleChatbot()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p class="bot">Welcome to Prestige Home Appliances.<br>
+        How can we help you today?</p>
+       <div class="suggestions">
+        <button onclick="quickQuestion('products')">Products</button>
+        <button onclick="quickQuestion('price')">Prices</button>
+        <button onclick="quickQuestion('delivery')">Delivery</button>
+        <button onclick="quickQuestion('location')">Location</button>
+        <button onclick="quickQuestion('contact')">Contact</button>
+    </div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script src="script.js"></script>
+
+<footer>
+    <p>&copy; 2026 Prestige Home Appliances</p>
+</footer>
+
+</body>
+</html>

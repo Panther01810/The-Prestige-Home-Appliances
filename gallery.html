@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Prestige Home Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Prestige Home Appliances</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="directors.html">Directors</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+<!--product filtering-->
+<div class="filter-buttons">
+    <button onclick="filterProducts('all')">ALL</button>
+    <button onclick="filterProducts('tv')">TVs</button>
+    <button onclick="filterProducts('Kitchen')">Kitchen</button>
+    <button onclick="filterProducts('SoundSystems')">SOUND SYSTEMS</button>
+    <button onclick="filterProducts('washingmashines')">Washers and dryers</button>
+    <button onclick="filterProducts('AirConditioners')">Air Conditioners</button>
+</div>
+<!--add to cart-->
+<div class="cart-icon" onclick="toggleCart()">
+    🛒 Cart (<span id="cart-count">0</span>)
+</div>
+
+<div class="cart-panel" id="cartPanel">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p><strong>Total: Ksh <span id="cart-total">0</span></strong></p>
+    <button onclick="clearCart()">Clear Cart</button>
+</div>
+<!--Products-->
+<section class="Product all">
+    <h2>Our Products</h2>
+
+    <div class="products-grid">
+
+        <div class="product">
+            <img src="images/Samsung1.jpg" alt="Television">
+            <h3>Samsung 55ku Smart Television</h3>
+            <p>70 Inch Crystal clear 4K display with smart features.</p>
+            <p class="price">Ksh 45,000</p>
+            <button onclick="addToCart('Samsung 55ku Smart Televison', 45000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/Samsung2.jpg" alt="Television">
+            <h3>Samsung 55s Smart Television</h3>
+            <p>55 Inch Crystal clear HD display with smart features.</p>
+            <p class="price">Ksh 25,000</p>
+            <button onclick="addToCart('Samsung 55s Smart Television', 25000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/Sony1.jpg" alt="Television">
+            <h3>Sony Bravia3 Smart Television</h3>
+            <p>126 Inch Crystal clear 4K HDR display with Android 2024 smart features.</p>
+            <p class="price">Ksh 325,000</p>
+            <button onclick="addToCart('Sony Bravia3 Smart Television', 325000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/Sony2.jpg" alt="Television">
+            <h3>Sony Bravia2 Smart Television</h3>
+            <p>72 Inch Crystal clear 4K HDR display with 2025 smart features.</p>
+            <p class="price">Ksh 116,000</p>
+            <button onclick="addToCart('Sony Bravia2 Smart Television', 116000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/VitronQLED43.jpg" alt="Television">
+            <h3>VITRON QLED43 Smart Television</h3>
+            <p>18 Inch Crystal clear 4K display with smart features.</p>
+            <p class="price">Ksh 18,000</p>
+            <button onclick="addToCart('VITRON QLED43 Smart Television', 45000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/tv.jpg" alt="Television">
+            <h3>Smart Television</h3>
+            <p>Crystal clear 4K display with smart features.</p>
+            <p class="price">Ksh 45,000</p>
+            <button onclick="addToCart('Smart Television', 45000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/tv.jpg" alt="Television">
+            <h3>Smart Television</h3>
+            <p>Crystal clear 4K display with smart features.</p>
+            <p class="price">Ksh 45,000</p>
+            <button onclick="addToCart('Smart Television', 45000)">Add to Cart</button>
+        </div>                                                
+        <div class="product tv">
+            <img src="images/tv.jpg" alt="Television">
+            <h3>Smart Television</h3>
+            <p>Crystal clear 4K display with smart features.</p>
+            <p class="price">Ksh 45,000</p>
+            <button onclick="addToCart('Smart Television', 45000)">Add to Cart</button>
+        </div>
+        <div class="product tv">
+            <img src="images/tv.jpg" alt="Television">
+            <h3>Smart Television</h3>
+            <p>Crystal clear 4K display with smart features.</p>
+            <p class="price">Ksh 45,000</p>
+            <button onclick="addToCart('Smart Television', 45000)">Add to Cart</button>
+        </div>        
+
+        <div class="product kitchen">
+            <img src="images/fridge.jpg" alt="Refrigerator">
+            <h3>Refrigerator</h3>
+            <p>Energy efficient with modern cooling.</p>
+            <p class="price">Ksh 60,000</p>
+            <button onclick="addToCart('Refrigerator', 60000)">Add to Cart</button>
+        </div>
+    <!--washing mashines-->
+        <div class="product washingmashines">
+            <img src="images/armco2.jpg" alt="Washing Machine">
+            <h3>Armco Washing Machine</h3>
+            <p> 12kG top Load, High performance Fully automatic washing.</p>
+            <p class="price">Ksh 68,000</p>
+            <button onclick="addToCart('ARMCO Washingg Mashine', 68000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/armco1.jpg" alt="Washing Machine">
+            <h3>ARMCO Washing Machine</h3>
+            <p> 8kG Front Load, High performance Fully automatic washing.</p>
+            <p class="price">Ksh 75,000</p>
+            <button onclick="addToCart('ARMCO Washingg Mashine', 75000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/armco3.jpg" alt="Washing Machine">
+            <h3>ARMCO Washing Machine</h3>
+            <p> 8kG top Load, High performance Semi automatic washing.</p>
+            <p class="price">Ksh 36,000</p>
+            <button onclick="addToCart('Washingg Mashine', 36000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Beko1.jpg" alt="Washing Machine">
+            <h3>BEKO Washing Machine</h3>
+            <p>BAW-1200 rpm, 8Kg, freestanding High performance Semi automatic washing.</p>
+            <p class="price">Ksh 47,000</p>
+            <button onclick="addToCart('BEKO Washingg Mashine', 47000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Beko2.jpg" alt="Washing Machine">
+            <h3>BEKO Washing Machine</h3>
+            <p>BAW-100 UK, 8Kg, Front Load  High performance Fully automatic washing.</p>
+            <p class="price">Ksh 92,000</p>
+            <button onclick="addToCart('BEKO Washingg Mashine', 92000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Hisense1.jpg" alt="Washing Machine">
+            <h3>HISENSE Washing Machine</h3>
+            <p>8Kg, Top Load High performance Fully automatic washing.</p>
+            <p class="price">Ksh 37,000</p>
+            <button onclick="addToCart('HISENSE Washingg Mashine', 37000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Hisense2.jpg" alt="Washing Machine">
+            <h3>HISESNSE Washing Machine</h3>
+            <p>WFQR214AJMT, 12kG Front Load, High performance automatic washing.</p>
+            <p class="price">Ksh 77,500</p>
+            <button onclick="addToCart('HISENSE Washingg Mashine', 77500)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Mika1.jpg" alt="Washing Machine">
+            <h3>MIKA Washing Machine</h3>
+            <p> 10kG Front Load, High performance Fully automatic washing.</p>
+            <p class="price">Ksh 75,000</p>
+            <button onclick="addToCart('MIKA Washingg Mashine', 75000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Von1.jpg" alt="Washing Machine">
+            <h3>VON Washing Machine</h3>
+            <p> 8kG Front Load, High performance automatic washing.</p>
+            <p class="price">Ksh 45,000</p>
+            <button onclick="addToCart('VON Washingg Mashine', 45000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Von2.jpg" alt="Washing Machine">
+            <h3>VON Washing Machine</h3>
+            <p>VAWD-906FVK 9/6kG Front Load, High performance automatic washing.</p>
+            <p class="price">Ksh 97,000</p>
+            <button onclick="addToCart('Washingg Mashine', 97000)">Add to Cart</button>
+        </div>
+        <div class="product washingmashines">
+            <img src="images/Lg1.jpg" alt="Washing Machine">
+            <h3>LG Washing Machine</h3>
+            <p>F3L2CRV2T, 15kG Front Load, High performance fully automatic washing.</p>
+            <p class="price">Ksh 290,000</p>
+            <button onclick="addToCart('Washingg Mashine', 290000)">Add to Cart</button>
+        </div>
+    <!--Kitchen Products-->
+        <div class="product kitchen">
+            <img src="images/microwave.jpg" alt="Microwave">
+            <h3>Microwave Oven</h3>
+            <p>Fast and efficient cooking.</p>
+            <p class="price">Ksh 15,000</p>
+            <button onclick="addToCart('Micro Oven', 15000)">Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-button" onclick="toggleChatbot()">
+    💬 Chat with us
+</div>
+
+<!-- CHATBOT WINDOW -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+        Prestige Support
+        <span onclick="toggleChatbot()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p class="bot">Welcome to Prestige Home Appliances.<br>
+        How can we help you today?</p>
+    <div class="suggestions">
+        <button onclick="quickQuestion('products')">Products</button>
+        <button onclick="quickQuestion('price')">Prices</button>
+        <button onclick="quickQuestion('delivery')">Delivery</button>
+        <button onclick="quickQuestion('location')">Location</button>
+        <button onclick="quickQuestion('contact')">Contact</button>
+    </div>
+</div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Prestige Home Appliances</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

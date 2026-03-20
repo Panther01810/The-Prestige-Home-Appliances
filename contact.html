@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Prestige Home Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Prestige Home Appliances</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="directors.html">Directors</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Contact Us</h2>
+
+    <form id="contactForm">
+
+        <input type="text" name="from_name" placeholder="Full Name" required>
+
+        <input type="email" name="from_email" placeholder="Email Address" required>
+
+        <input type="text" name="phone" placeholder="Phone Number" required>
+
+        <textarea name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+
+        <p id="form-status"></p>
+
+    </form>
+</section>
+
+<!-- EMAILJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-button" onclick="toggleChatbot()">
+    💬 Chat with us
+</div>
+
+<!-- CHATBOT WINDOW -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+        Prestige Support
+        <span onclick="toggleChatbot()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p class="bot">Welcome to Prestige Home Appliances.<br>
+        How can we help you today?</p>
+       <div class="suggestions">
+        <button onclick="quickQuestion('products')">Products</button>
+        <button onclick="quickQuestion('price')">Prices</button>
+        <button onclick="quickQuestion('delivery')">Delivery</button>
+        <button onclick="quickQuestion('location')">Location</button>
+        <button onclick="quickQuestion('contact')">Contact</button>
+    </div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Prestige Home Appliances</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

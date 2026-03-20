@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prestige Home Appliances</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+}
+
+/* Header */
+header{
+    background:#0a3d62;
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    font-size:28px;
+}
+
+nav a{
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#fbc531;
+}
+
+/* Slideshow */
+.slideshow-container{
+    position:relative;
+    max-width:100%;
+    height:400px;
+    overflow:hidden;
+}
+
+.slide{
+    display:none;
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.slide img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.caption{
+    position:absolute;
+    bottom:30px;
+    left:50px;
+    background:rgba(0,0,0,0.6);
+    color:white;
+    padding:15px;
+    font-size:22px;
+    border-radius:5px;
+}
+
+/* Offers Section */
+.section{
+    padding:50px 40px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:28px;
+    margin-bottom:30px;
+    color:#0a3d62;
+}
+
+.offers{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:15px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.card h3{
+    margin:10px 0;
+    color:#0a3d62;
+}
+
+.price{
+    color:#e84118;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:gray;
+    font-size:14px;
+}
+
+button{
+    margin-top:10px;
+    padding:10px 15px;
+    border:none;
+    background:#0a3d62;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#fbc531;
+    color:black;
+}
+
+/* Countdown */
+.countdown{
+    background:#192a56;
+    color:white;
+    padding:30px;
+    text-align:center;
+    font-size:22px;
+}
+
+/* Footer */
+footer{
+    background:#0a3d62;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>Prestige Home Appliances</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="directors.html">Directors</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>  
+
+    <div>
+        <!-- Slideshow -->
+<div class="slideshow-container">
+
+    <div class="slide fade">
+        <img src="images/Samsung1.jpg">
+        <div class="caption">🔥 Mega Discounts on Smart TVs</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad">
+        <div class="caption">🎵 Powerful Sound Systems On Offer</div>
+    </div>
+
+    <div class="slide fade">
+        <img src="https://images.unsplash.com/photo-1606813902914-39d9d0ed9125">
+        <div class="caption">🍳 Modern Kitchen Cookers & Appliances</div>
+    </div>
+
+</div>
+
+<!-- Countdown Offer -->
+<div class="countdown">
+    ⏳ Flash Sale Ends In: <span id="timer"></span>
+</div>
+
+<!-- Offers -->
+<section class="section">
+    <h2 class="section-title">🔥 Hot Deals</h2>
+    <div class="offers">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6">
+            <h3>Smart 4K TV</h3>
+            <p class="price">KSh 45,999 <span class="old-price">KSh 59,999</span></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+            <h3>Home Theatre System</h3>
+            <p class="price">KSh 29,999 <span class="old-price">KSh 39,999</span></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+            <h3>Modern Cooker</h3>
+            <p class="price">KSh 26,500 <span class="old-price">KSh 32,000</span></p>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1558611848-73f7eb4001a1">
+            <h3>Vacuum Cleaner</h3>
+            <p class="price">KSh 12,999 <span class="old-price">KSh 18,500</span></p>
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+</section>
+
+<section class="hero">
+    <h2>Powering Modern Living</h2>
+    <p>High-quality home electronic appliances designed to make everyday living easier and more energy-efficient.</p>
+</section>
+
+<section>
+    <h2>Featured Products</h2>
+    <ul>
+        <li>Smart Televisions</li>
+        <li>Energy Efficient Refrigerators</li>
+        <li>Modern Washing Machines</li>
+        <li>Electric Cookers</li>
+        <li>Blenders</li>
+        <li>Electric Kettles</li>
+        <li>Powerful Sound Systems</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Why Choose Us?</h2>
+    <p>We combine technology, efficiency, affordability and durability to meet the needs of modern households.</p>
+</section>
+
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-button" onclick="toggleChatbot()">
+    💬 Chat with us
+</div>
+
+<!-- CHATBOT WINDOW -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+        Prestige Support
+        <span onclick="toggleChatbot()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p class="bot">Welcome to Prestige Home Appliances.<br>
+        How can we help you today?</p>
+    <div class="suggestions">
+        <button onclick="quickQuestion('products')">Products</button>
+        <button onclick="quickQuestion('price')">Prices</button>
+        <button onclick="quickQuestion('delivery')">Delivery</button>
+        <button onclick="quickQuestion('location')">Location</button>
+        <button onclick="quickQuestion('contact')">Contact</button>
+    </div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 Prestige Home Appliances. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// Slideshow
+let slideIndex = 0;
+showSlides();
+
+function showSlides(){
+    let slides = document.getElementsByClassName("slide");
+    for(let i=0; i<slides.length; i++){
+        slides[i].style.display="none";
+    }
+    slideIndex++;
+    if(slideIndex > slides.length){slideIndex=1}
+    slides[slideIndex-1].style.display="block";
+    setTimeout(showSlides, 3000);
+}
+
+// Countdown Timer
+let countDownDate = new Date("Mar 10, 2026 23:59:59").getTime();
+
+let x = setInterval(function(){
+    let now = new Date().getTime();
+    let distance = countDownDate - now;
+
+    let hours = Math.floor((distance % (1000*60*60*24))/(1000*60*60));
+    let minutes = Math.floor((distance % (1000*60*60))/(1000*60));
+    let seconds = Math.floor((distance % (1000*60))/1000);
+
+    document.getElementById("timer").innerHTML = hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    if(distance < 0){
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+    }
+},1000);
+</script>
+
+</body>
+</html>

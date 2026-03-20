@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us - Prestige Home Appliances</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Prestige Home Appliances</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="directors.html">Directors</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<section>
+    <h2>About Prestige Home Appliances</h2>
+    <p>Delivering Modern Solutions for Smarter Homes. we sell high Quality Electronics Home Appliances at A relatively Affoardable fee.</p>
+</section>
+
+<section>
+    <h2>MISSION</h2>
+    <p>To provide high-quality appliances through Innovation, reliable services, and customer-centered solutions that improve everyday living.</p>
+</section>
+
+<section>
+    <h2>VISION</h2>
+    <p>To become Africa's Most Trusted home appliances brand by delivering Smart, Energy efficient and affordable household technologies.</p>
+</section>
+
+<section>
+    <h2>Our Core Values</h2>
+    <ul>
+        <li>Quality and Durability</li>
+        <li>Customer Satisfaction</li>
+        <li>Innovation</li>
+        <li>Integrity</li>
+    </ul>
+</section>
+
+<!-- CHATBOT BUTTON -->
+<div class="chatbot-button" onclick="toggleChatbot()">
+    💬 Chat with us
+</div>
+
+<!-- CHATBOT WINDOW -->
+<div class="chatbot-container" id="chatbot">
+    <div class="chat-header">
+        Prestige Support
+        <span onclick="toggleChatbot()">✖</span>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+        <p class="bot">Welcome to Prestige Home Appliances.<br>
+        How can we help you today?</p>
+       <div class="suggestions">
+        <button onclick="quickQuestion('products')">Products</button>
+        <button onclick="quickQuestion('price')">Prices</button>
+        <button onclick="quickQuestion('delivery')">Delivery</button>
+        <button onclick="quickQuestion('location')">Location</button>
+        <button onclick="quickQuestion('contact')">Contact</button>
+    </div>
+    </div>
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask a question...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+<script src="script.js"></script>
+
+<footer>
+    <p>&copy; 2026 Prestige Home Appliances</p>
+</footer>
+
+</body>
+</html>
