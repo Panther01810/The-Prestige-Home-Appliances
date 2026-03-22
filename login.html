@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login - Prestige</title>
+</head>
+<body style="font-family:Poppins; text-align:center; padding:50px;">
+
+<h2>Login</h2>
+
+<input id="user" placeholder="Username"><br><br>
+<input id="pass" type="password" placeholder="Password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<script>
+function login(){
+ let u=document.getElementById("user").value;
+ let p=document.getElementById("pass").value;
+
+ if(u && p){
+   localStorage.setItem("user", u);
+   alert("Login successful");
+   window.location="index.html";
+ } else {
+   alert("Enter details");
+ }
+}
+</script>
+
+</body>
+</html>
